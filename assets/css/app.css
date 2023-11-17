@@ -1,5 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+html {
+  @apply bg-customBackgroundBlack;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+}
+
 /* This file is for your main application CSS */
+.welcome-container {
+  @apply text-slate-400;
+}
+
+.another-container {
+  @apply text-red-600 text-5xl text-center;
+}

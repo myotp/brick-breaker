@@ -1,0 +1,16 @@
+<div phx-window-keydown="keydown" phx-window-keyup="keyup">
+  <%= if @game_state == :welcome do %>
+    <div class="welcome-container">
+      <h1>Hello, <%= @name %></h1>
+      <div class="font-press-start">
+        <br /> ready?
+      </div>
+    </div>
+  <% end %>
+
+  <%= if @game_state == :playing do %>
+    <div class="another-container">
+      gogogo
+    </div>
+  <% end %>
+</div>
