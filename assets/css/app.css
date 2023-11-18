@@ -4,19 +4,51 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-html {
-  @apply bg-customBackgroundBlack;
-}
+/* html {
+  @apply bg-slate-900;
+  @apply bg-yellow-500;
+} */
 
 body {
   font-family: "Press Start 2P", cursive;
 }
 
+/* .welcome-container {
+  margin: 6rem 12rem 12rem 12rem;
+} */
+
+@media screen and (max-width: 700px) {
+  .welcome-container {
+    margin: 6rem 2rem 2rem 2rem;
+  }
+
+  .welcome-container .start-play {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .welcome-container .no-mobile {
+    display: none;
+  }
+}
+
 /* This file is for your main application CSS */
 .welcome-container {
-  @apply text-slate-400;
+  width: 800px;
+  height: 600px;
+  @apply bg-green-300;
+  @apply mx-auto my-24;
+  /* @apply mx-auto sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 text-slate-300 bg-slate-600; */
 }
 
 .another-container {
-  @apply text-red-600 text-5xl text-center;
+  width: 800px;
+  height: 600px;
+  @apply bg-yellow-500;
+  /* @apply text-red-600 text-5xl text-center; */
+}
+
+.another-container .block.paddle {
+  @apply w-10 h-5 bg-slate-400 rounded-2xl absolute top-1 left-2;
 }
